@@ -1,0 +1,53 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #f1abcc;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.burgers-container {
+  margin: 0 auto;
+  display: flex;
+  width: 70%;
+}
+
+.burgers-list {
+  flex: 1;
+  margin: 10px;
+}
+
+.burgers-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.burgers-list li {
+  box-shadow: 2px 2px 2px #555;
+  margin: 10px 0 10px;
+  padding: 10px;
+  background-color: #fbd5e7;
+}
+
+.burgers-list.devoured li {
+  background-color: #d79ab7;
+}
+
+.submit-class {
+    text-align: center;
+}
+
+textarea {
+  background-color: #f6e1eb; 
+}
+
+button {
+  background-color: #ffbfb6;
+  border-radius: 0px; 
+  border: none;
+  box-shadow: 2px 2px 2px #777;
+}

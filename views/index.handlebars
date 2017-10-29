@@ -1,25 +1,36 @@
-<h1>burger_name!</h1>
+<div class="container">
+<h1>Burger Kingdom!</h1>
 
-<h2>Burgers!</h2>
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block }}
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class="burgers-container">
+  <div class="burgers-list">
+    <h2>Burgers to eat!</h2>
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block }}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
 
-<h2>Devoured Burgers</h2>
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block }}
-    {{/if}}
-  {{/each}}
-</ul>
+  <div class="burgers-list devoured">
+    <h2>Devoured Burgers</h2>
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block }}
+        {{/if}}
+      {{/each}}
+    </ul>
+</div>
+</div>
 
-<h2>Add a burger</h2>
-<form class="create-form">
-  <textarea id="burger-name" cols="30" rows="5"></textarea>
-  <button type="submit">submit</button>
-</form>
+<div class="submit-class">
+  <h2>Add a burger</h2>
+  <form class="create-form">
+    <textarea id="burger-name" cols="30" rows="5"></textarea>
+    <br/>
+    <button type="submit">submit</button>
+  </form>
+</div>
+</div>
