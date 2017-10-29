@@ -1,6 +1,6 @@
 var orm = require("../config/orm.js");
 
-var TABLE_NAME = "burger";
+var TABLE_NAME = "burgers";
 
 var burger = {
   selectAll: function(cb) {
